@@ -1,0 +1,14 @@
+server.port: 7001
+server.error.include-message: always
+
+logging:
+  level:
+    root: INFO
+    com.cuucloud: DEBUG
+
+---
+server.port: 8080
+spring:
+  config:
+    activate:
+      on-profile: docker
